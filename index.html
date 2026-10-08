@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang='vi'>
+<head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width,initial-scale=1'>
+<meta name='robots' content='noindex,nofollow'>
+<meta http-equiv='Content-Security-Policy' content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; connect-src 'self'">
+<title>Bản tin hằng ngày</title>
+<style>
+:root{--bg:#f6f8f5;--card:#fff;--ink:#1c2a22;--mute:#5d6b63;--line:#dfe6e0;--accent:#2f6b4f}
+@media (prefers-color-scheme:dark){:root{--bg:#121a15;--card:#1a241d;--ink:#e8efe9;--mute:#9fb0a5;--line:#2a372e;--accent:#6fcf9f}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+main{max-width:720px;margin:0 auto;padding:24px 16px 48px}
+h1{font-size:1.5rem;margin:0 0 4px}
+.meta{color:var(--mute);font-size:.9rem;margin:0 0 24px}
+h2{font-size:1.1rem;margin:28px 0 12px;color:var(--accent)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:0 0 12px}
+.card a{color:var(--ink);font-weight:600;text-decoration:none}
+.card a:hover{text-decoration:underline}
+.src{color:var(--mute);font-size:.85rem;margin:2px 0 6px}
+.card p{margin:0}
+.n{display:inline-block;min-width:1.6em;color:var(--accent);font-weight:700}
+#status{color:var(--mute)}
+footer{margin-top:32px;color:var(--mute);font-size:.8rem}
+</style>
+</head>
+<body>
+<main>
+<h1>Bản tin hằng ngày</h1>
+<p class='meta' id='date'>Green Life Spa</p>
+<p id='status'>Đang tải...</p>
+<section id='newsWrap' hidden><h2>Tin thị trường</h2><div id='news'></div></section>
+<section id='growthWrap' hidden><h2>Gợi ý tăng trưởng</h2><div id='growth'></div></section>
+<footer id='foot'></footer>
+</main>
+<script>
+(function(){
+function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!==undefined)e.textContent=x;return e}
+function ok(u){return typeof u==='string'&&(u.indexOf('http://')===0||u.indexOf('https://')===0)}
+var st=document.getElementById('status');
+fetch('data/report.json?t='+Date.now(),{cache:'no-store'}).then(function(r){if(!r.ok)throw new Error('http '+r.status);return r.json()}).then(function(d){
+if(!d||d.status!=='ok'){st.textContent=(d&&d.message)||'Chưa có báo cáo.';return}
+document.getElementById('date').textContent='Green Life Spa - '+d.date;
+var n=document.getElementById('news');
+(d.news||[]).forEach(function(x){var c=el('div','card');var h=el('div');if(ok(x.url)){var a=el('a','',x.title);a.href=x.url;a.target='_blank';a.rel='noopener noreferrer';h.appendChild(a)}else{h.appendChild(el('strong','',x.title))}c.appendChild(h);c.appendChild(el('div','src',[x.source,x.published].filter(Boolean).join(' - ')));if(x.note)c.appendChild(el('p','',x.note));n.appendChild(c)});
+var g=document.getElementById('growth');
+(d.growth||[]).forEach(function(x,i){var c=el('div','card');var h=el('div');h.appendChild(el('span','n',String(i+1)));h.appendChild(el('strong','',x.title));c.appendChild(h);if(x.detail)c.appendChild(el('p','',x.detail));g.appendChild(c)});
+document.getElementById('newsWrap').hidden=!(d.news||[]).length;
+document.getElementById('growthWrap').hidden=!(d.growth||[]).length;
+st.hidden=true;
+if(d.generated_at)document.getElementById('foot').textContent='Cập nhật: '+d.generated_at;
+}).catch(function(){st.textContent='Chưa tải được báo cáo. Thử lại sau.'})
+})();
+</script>
+</body>
+</html>
