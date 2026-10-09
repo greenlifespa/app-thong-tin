@@ -1,1 +1,27 @@
-{"status":"pending","message":"Báo cáo đầu tiên sẽ hiện ở đây sau khi chạy thử."}
+{
+  "status": "ok",
+  "date": "09/10/2026",
+  "generated_at": "09/10/2026 07:24",
+  "news": [
+    {
+      "title": "'Cứu tinh' cho giấc ngủ phụ nữ mãn kinh - 4 bí quyết vàng phải thử ngay",
+      "source": "VnExpress",
+      "url": "https://vnexpress.net/cuu-tinh-cho-giac-ngu-phu-nu-man-kinh-4-bi-quyet-vang-phai-thu-ngay-5128387.html",
+      "published": "08/10/2026",
+      "note": "Tin nhắc về bí quyết cải thiện giấc ngủ cho phụ nữ mãn kinh, phù hợp để nhân viên tham khảo khi tư vấn dịch vụ gội đầu dưỡng sinh."
+    },
+    {
+      "title": "Sau 50 tuổi: đi bộ thế nào để vừa tốt cho tim vừa tránh đau khớp?",
+      "source": "Thanh Niên",
+      "url": "https://thanhnien.vn/sau-50-tuoi-di-bo-the-nao-de-vua-tot-cho-tim-vua-tranh-dau-khop-185261008142742042.htm",
+      "published": "08/10/2026",
+      "note": "Tin nhắc về cách đi bộ tốt cho tim và tránh đau khớp ở người trên 50 tuổi, nhóm khách có thể hay gặp tình trạng đau mỏi cơ thể."
+    }
+  ],
+  "growth": [
+    {
+      "title": "Gợi ý dịch vụ chăm sóc cơ thể cho khách lớn tuổi",
+      "detail": "Với những khách hàng lớn tuổi có thể lo ngại về tình trạng đau khớp khi đi bộ như nội dung tin “Sau 50 tuổi: đi bộ thế nào để vừa tốt cho tim vừa tránh đau …”, nhân viên có thể giới thiệu các dịch vụ massage và chăm sóc cơ thể như Galaxy 60 phút với vùng Lưng + Chân để thư giãn."
+    }
+  ]
+}
