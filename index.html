@@ -7,20 +7,28 @@
 <meta http-equiv='Content-Security-Policy' content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; connect-src 'self'">
 <title>Bản tin hằng ngày</title>
 <style>
-:root{--bg:#f6f8f5;--card:#fff;--ink:#1c2a22;--mute:#5d6b63;--line:#dfe6e0;--accent:#2f6b4f}
-@media (prefers-color-scheme:dark){:root{--bg:#121a15;--card:#1a241d;--ink:#e8efe9;--mute:#9fb0a5;--line:#2a372e;--accent:#6fcf9f}}
+:root{--bg:#f6f8f5;--card:#fff;--ink:#1c2a22;--mute:#5d6b63;--line:#dfe6e0;--accent:#2f6b4f;--chip:#e8f0ea;--warn:#8a5a00;--warnbg:#fff4dc}
+@media (prefers-color-scheme:dark){:root{--bg:#121a15;--card:#1a241d;--ink:#e8efe9;--mute:#9fb0a5;--line:#2a372e;--accent:#6fcf9f;--chip:#243229;--warn:#f0c674;--warnbg:#3a2f12}}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
 main{max-width:720px;margin:0 auto;padding:24px 16px 48px}
 h1{font-size:1.5rem;margin:0 0 4px}
-.meta{color:var(--mute);font-size:.9rem;margin:0 0 24px}
+.meta{color:var(--mute);font-size:.9rem;margin:0 0 16px}
 h2{font-size:1.1rem;margin:28px 0 12px;color:var(--accent)}
+h3{font-size:1rem;margin:18px 0 8px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:0 0 12px}
 .card a{color:var(--ink);font-weight:600;text-decoration:none}
 .card a:hover{text-decoration:underline}
 .src{color:var(--mute);font-size:.85rem;margin:2px 0 6px}
-.card p{margin:0}
+.card p{margin:6px 0 0}
 .n{display:inline-block;min-width:1.6em;color:var(--accent);font-weight:700}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 6px}
+.chip{background:var(--chip);color:var(--ink);border-radius:999px;padding:2px 10px;font-size:.78rem}
+.chip.type{background:var(--accent);color:var(--bg);font-weight:700}
+.steps{margin:6px 0 0;padding-left:1.3em}
+.steps li{margin:2px 0}
+.note{color:var(--mute);font-size:.88rem}
+.stale{background:var(--warnbg);color:var(--warn);border-radius:10px;padding:8px 12px;margin:0 0 16px;font-size:.9rem}
 #status{color:var(--mute)}
 footer{margin-top:32px;color:var(--mute);font-size:.8rem}
 </style>
@@ -29,26 +37,44 @@ footer{margin-top:32px;color:var(--mute);font-size:.8rem}
 <main>
 <h1>Bản tin hằng ngày</h1>
 <p class='meta' id='date'>Green Life Spa</p>
+<div id='stale' class='stale' hidden></div>
 <p id='status'>Đang tải...</p>
 <section id='newsWrap' hidden><h2>Tin thị trường</h2><div id='news'></div></section>
+<section id='assessWrap' hidden><h2>Đánh giá thị trường</h2><div id='assess'></div></section>
+<section id='planWrap' hidden><h2>Hướng triển khai 30 ngày tới</h2><div id='plan'></div></section>
+<section id='changesWrap' hidden><h2>So với hôm qua</h2><div id='changes'></div></section>
+<section id='extraWrap' hidden><h2>Bổ sung</h2><div id='extra'></div></section>
 <section id='growthWrap' hidden><h2>Gợi ý tăng trưởng</h2><div id='growth'></div></section>
-<footer id='foot'></footer>
+<footer><p id='disc'></p><p id='foot'></p></footer>
 </main>
 <script>
 (function(){
-function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!==undefined)e.textContent=x;return e}
+function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!==undefined&&x!==null)e.textContent=String(x);return e}
 function ok(u){return typeof u==='string'&&(u.indexOf('http://')===0||u.indexOf('https://')===0)}
+function arr(v){return Array.isArray(v)?v:[]}
+function show(id,on){document.getElementById(id).hidden=!on}
+function chips(list){var w=el('div','chips');list.forEach(function(c){if(!c||!c[1])return;w.appendChild(el('span','chip'+(c[0]==='type'?' type':''),c[1]))});return w}
+function today(){var d=new Date();function p(n){return n<10?'0'+n:String(n)}return p(d.getDate())+'/'+p(d.getMonth()+1)+'/'+d.getFullYear()}
 var st=document.getElementById('status');
 fetch('data/report.json?t='+Date.now(),{cache:'no-store'}).then(function(r){if(!r.ok)throw new Error('http '+r.status);return r.json()}).then(function(d){
 if(!d||d.status!=='ok'){st.textContent=(d&&d.message)||'Chưa có báo cáo.';return}
 document.getElementById('date').textContent='Green Life Spa - '+d.date;
+if(d.date&&d.date!==today()){var s=document.getElementById('stale');s.textContent='Đây là bản tin gần nhất (ngày '+d.date+'). Bản tin hôm nay chưa được đăng.';s.hidden=false}
 var n=document.getElementById('news');
-(d.news||[]).forEach(function(x){var c=el('div','card');var h=el('div');if(ok(x.url)){var a=el('a','',x.title);a.href=x.url;a.target='_blank';a.rel='noopener noreferrer';h.appendChild(a)}else{h.appendChild(el('strong','',x.title))}c.appendChild(h);c.appendChild(el('div','src',[x.source,x.published].filter(Boolean).join(' - ')));if(x.note)c.appendChild(el('p','',x.note));n.appendChild(c)});
+arr(d.news).forEach(function(x){var c=el('div','card');var h=el('div');if(ok(x.url)){var a=el('a','',x.title);a.href=x.url;a.target='_blank';a.rel='noopener noreferrer';h.appendChild(a)}else{h.appendChild(el('strong','',x.title))}c.appendChild(h);c.appendChild(el('div','src',[x.source,x.published].filter(Boolean).join(' - ')));if(x.note)c.appendChild(el('p','',x.note));n.appendChild(c)});
+var a=document.getElementById('assess');
+arr(d.assessment).forEach(function(x){var c=el('div','card');c.appendChild(chips([['type',x.type],['',x.confidence?'Tin cậy: '+x.confidence:''],['',x.impact?'Tác động: '+x.impact:''],['',x.agree],['',x.is_new?'Hướng mới':'']]));c.appendChild(el('p','',x.text));if(x.basis)c.appendChild(el('p','note','Cơ sở: '+x.basis));if(x.claude)c.appendChild(el('p','note','Ý kiến khác: '+x.claude));a.appendChild(c)});
+var pl=document.getElementById('plan');var lastWhen=null;
+arr(d.plan).forEach(function(x){if(x.when!==lastWhen){lastWhen=x.when;if(x.when)pl.appendChild(el('h3','',x.when))}var c=el('div','card');var h=el('div');h.appendChild(el('strong','',x.title+(x.is_new?' (hướng mới)':'')));c.appendChild(h);if(x.owner)c.appendChild(el('p','note','Ai làm: '+x.owner));var ol=el('ol','steps');arr(x.steps).forEach(function(s){ol.appendChild(el('li','',s))});if(ol.childNodes.length)c.appendChild(ol);if(x.note)c.appendChild(el('p','note','Lưu ý: '+x.note));pl.appendChild(c)});
+var ch=document.getElementById('changes');var chg=d.changes||{};var chAny=false;
+[['new','Mới'],['changed','Đổi'],['gone','Không còn']].forEach(function(k){var v=arr(chg[k[0]]);if(!v.length)return;chAny=true;var c=el('div','card');c.appendChild(el('strong','',k[1]));var ul=el('ul','steps');v.forEach(function(s){ul.appendChild(el('li','',s))});c.appendChild(ul);ch.appendChild(c)});
+var ex=document.getElementById('extra');
+arr(d.claude_extra).forEach(function(x){var c=el('div','card');c.appendChild(chips([['type',x.type],['',x.confidence?'Tin cậy: '+x.confidence:''],['',x.impact?'Tác động: '+x.impact:'']]));c.appendChild(el('p','',x.text));ex.appendChild(c)});
 var g=document.getElementById('growth');
-(d.growth||[]).forEach(function(x,i){var c=el('div','card');var h=el('div');h.appendChild(el('span','n',String(i+1)));h.appendChild(el('strong','',x.title));c.appendChild(h);if(x.detail)c.appendChild(el('p','',x.detail));g.appendChild(c)});
-document.getElementById('newsWrap').hidden=!(d.news||[]).length;
-document.getElementById('growthWrap').hidden=!(d.growth||[]).length;
+if(!arr(d.plan).length){arr(d.growth).forEach(function(x,i){var c=el('div','card');var h=el('div');h.appendChild(el('span','n',String(i+1)));h.appendChild(el('strong','',x.title));c.appendChild(h);if(x.detail)c.appendChild(el('p','',x.detail));g.appendChild(c)})}
+show('newsWrap',arr(d.news).length>0);show('assessWrap',arr(d.assessment).length>0);show('planWrap',arr(d.plan).length>0);show('changesWrap',chAny);show('extraWrap',arr(d.claude_extra).length>0);show('growthWrap',!arr(d.plan).length&&arr(d.growth).length>0);
 st.hidden=true;
+if(d.disclaimer)document.getElementById('disc').textContent=d.disclaimer;
 if(d.generated_at)document.getElementById('foot').textContent='Cập nhật: '+d.generated_at;
 }).catch(function(){st.textContent='Chưa tải được báo cáo. Thử lại sau.'})
 })();
