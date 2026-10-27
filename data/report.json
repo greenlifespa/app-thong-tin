@@ -1,67 +1,74 @@
 {
   "status": "ok",
-  "date": "23/10/2026",
-  "generated_at": "23/10/2026 13:41",
+  "date": "27/10/2026",
+  "generated_at": "27/10/2026 15:08",
   "news": [
     {
-      "title": "5 cách thư giãn giúp ngủ ngon",
+      "title": "Vì sao bạn mệt mỏi dù ngủ đủ 8 tiếng?",
       "source": "VnExpress",
-      "url": "https://vnexpress.net/5-cach-thu-gian-giup-ngu-ngon-5129669.html",
-      "published": "23/10/2026",
-      "note": "Chủ đề 5 cách thư giãn giúp ngủ ngon gợi mở góc nội dung để spa tư vấn các buổi gội đầu dưỡng sinh và xoa bóp hỗ trợ thư giãn tinh thần."
+      "url": "https://vnexpress.net/vi-sao-ban-met-moi-du-ngu-du-8-tieng-5132420.html",
+      "published": "26/10/2026",
+      "note": "Nhu cầu cải thiện cảm giác mệt mỏi là cơ hội để spa giới thiệu các gói gội đầu và xoa bóp bấm huyệt giúp thư giãn tinh thần."
     },
     {
-      "title": "Caffeine, rượu, ăn cay - bộ ba có thể 'đánh cắp' giấc ngủ",
+      "title": "Căng cơ khác rách cơ thế nào",
       "source": "VnExpress",
-      "url": "https://vnexpress.net/caffeine-ruou-an-cay-bo-ba-co-the-danh-cap-giac-ngu-5134921.html",
-      "published": "23/10/2026",
-      "note": "Thông tin về đồ uống và ăn cay có thể ảnh hưởng giấc ngủ là dịp để spa giới thiệu các gói gội đầu và xoa bóp giúp thả lỏng cơ thể."
+      "url": "https://vnexpress.net/cang-co-khac-rach-co-the-nao-5137038.html",
+      "published": "26/10/2026",
+      "note": "Tình trạng căng cơ thường gặp giúp spa giới thiệu các gói xoa bóp cơ thể nhằm hỗ trợ thả lỏng cơ bắp."
     },
     {
-      "title": "Đau lưng có phải là dấu hiệu của tình trạng xương yếu đi?",
+      "title": "Ăn hạt dẻ cười có thực sự giúp ngủ ngon hơn?",
       "source": "Thanh Niên",
-      "url": "https://thanhnien.vn/dau-lung-co-phai-la-dau-hieu-cua-tinh-trang-xuong-yeu-di-185261021200233222.htm",
-      "published": "21/10/2026",
-      "note": "Nội dung thảo luận về tình trạng đau lưng gợi ý spa giới thiệu gói xoa bóp vùng Lưng + Chân giúp hỗ trợ thư giãn cơ thể."
+      "url": "https://thanhnien.vn/an-hat-de-cuoi-co-thuc-su-giup-ngu-ngon-hon-185261026115421283.htm",
+      "published": "26/10/2026",
+      "note": "Sự quan tâm đến giải pháp hỗ trợ giấc ngủ ngon là dịp thuận lợi để spa tư vấn các gói xoa bóp giúp thư giãn trước giờ nghỉ ngơi."
+    },
+    {
+      "title": "Bài viết dẫn ý kiến bác sĩ cho biết xoa bóp bấm huyệt đúng cách có thể hỗ trợ giải tỏa căng thẳng thần kinh, tăng cường tuần hoàn và thư giãn cơ thể,…",
+      "source": "Sức khỏe và Đời sống",
+      "url": "https://suckhoedoisong.vn/bat-ngo-voi-cai-thien-mat-ngu-nho-xoa-bop-bam-huyet-169261017062055271.htm",
+      "published": "17/10/2026",
+      "note": "Thông tin xoa bóp bấm huyệt hỗ trợ giải tỏa căng thẳng thần kinh và đau mỏi cổ vai gáy giúp spa khẳng định giá trị các gói xoa bóp thư giãn."
     }
   ],
   "disclaimer": "Nhận định do hai AI (Gemini viết, Claude phản biện) đưa ra từ nghiên cứu thị trường đã kiểm nguồn và tin trong ngày; dòng ghi nhận định của AI là kiến thức sẵn có, chưa kiểm chứng.",
   "assessment": [
     {
       "type": "Xu hướng",
-      "text": "Số người đến khám vì các triệu chứng liên quan stress, mất ngủ ngày càng tăng, trong đó ở nam giới có thể gồm đau đầu và đau vai gáy.",
-      "basis": "Từ nghiên cứu thị trường: VnExpress, 12/08/2026",
+      "text": "Xoa bóp bấm huyệt đúng cách được ghi nhận hỗ trợ giải tỏa căng thẳng thần kinh, tăng cường tuần hoàn và thư giãn cơ thể, nhất là ở người mất ngủ kèm đau mỏi cổ vai gáy.",
+      "basis": "Từ nghiên cứu thị trường: Sức khỏe và Đời sống, 17/10/2026",
       "confidence": "Vừa",
       "impact": "Vừa",
-      "agree": "Đồng ý",
-      "claude": "",
-      "is_new": false
-    },
-    {
-      "type": "Cơ hội",
-      "text": "Khuyến cáo không tự ý mua hoặc tăng liều thuốc ngủ khi stress kéo dài tạo cơ hội để spa giới thiệu các buổi gội đầu và xoa bóp giúp thư giãn tinh thần.",
-      "basis": "Từ nghiên cứu thị trường: Sức khỏe và Đời sống, 15/09/2026",
-      "confidence": "Vừa",
-      "impact": "Thấp",
       "agree": "Đồng ý",
       "claude": "",
       "is_new": false
     },
     {
       "type": "Rủi ro",
-      "text": "Tại Quốc hội có ý kiến nêu nhu cầu phân định rõ dịch vụ chăm sóc không xâm lấn với dịch vụ có yếu tố xâm lấn; spa nên chủ động làm rõ phạm vi dịch vụ.",
-      "basis": "Từ nghiên cứu thị trường: Dân trí, 03/08/2026",
+      "text": "Cơ quan chức năng tăng cường kiểm tra cơ sở massage và xử lý nghiêm vi phạm, khuyến cáo các cơ sở chấp hành quy định và quản lý nhân viên chặt chẽ.",
+      "basis": "Từ nghiên cứu thị trường: Tiếng Chuông - Cổng TTĐT Chính phủ, 13/08/2026",
       "confidence": "Cao",
       "impact": "Vừa",
-      "agree": "Đồng ý",
+      "agree": "Còn khác nhau",
       "claude": "",
       "is_new": false
     },
     {
       "type": "Dự đoán",
       "text": "Chủ đề các cách thư giãn giúp ngủ ngon tiếp tục xuất hiện trên báo, có thể là góc nội dung cho dịch vụ gội đầu và xoa bóp thư giãn.",
-      "basis": "Từ tin hôm nay",
+      "basis": "Nhận định của AI, chưa kiểm chứng",
       "confidence": "Thấp",
+      "impact": "Thấp",
+      "agree": "Đồng ý",
+      "claude": "",
+      "is_new": false
+    },
+    {
+      "type": "Cơ hội",
+      "text": "Chiến lược truyền thông đa kênh qua video ngắn và hội nhóm địa phương được đề xuất nhằm mở rộng tệp khách hàng và xây dựng niềm tin cho spa.",
+      "basis": "Từ nghiên cứu thị trường: POS365, 25/09/2026",
+      "confidence": "Vừa",
       "impact": "Thấp",
       "agree": "Đồng ý",
       "claude": "",
@@ -71,75 +78,97 @@
   "plan": [
     {
       "when": "Tuần 1",
-      "title": "Rà soát quy trình và niêm yết rõ ràng danh mục dịch vụ xoa bóp và gội đầu dưỡng sinh thuần túy thư giãn không xâm lấn",
+      "title": "Rà soát hồ sơ nhân viên và niêm yết công khai quy trình dịch vụ xoa bóp thuần túy thư giãn lành mạnh",
       "owner": "chủ spa và lễ tân",
       "steps": [
-        "Chủ spa kiểm tra toàn bộ danh mục dịch vụ và dụng cụ để đảm bảo spa chỉ cung cấp dịch vụ thư giãn thuần túy, hoàn thành trước 25/10/2026",
-        "Lễ tân in và đặt bảng niêm yết cam kết dịch vụ thư giãn không xâm lấn tại quầy lễ tân, hoàn thành trước 26/10/2026"
+        "Chủ spa kiểm tra toàn bộ hồ sơ lý lịch và cam kết tuân thủ quy chế của kỹ thuật viên, hoàn thành trước ngày 31/10/2026.",
+        "Lễ tân in và niêm yết công khai bảng mô tả các dịch vụ xoa bóp thư giãn tại quầy tiếp đón trong tuần 1.",
+        "Chủ spa phổ biến quy tắc ứng xử chuẩn mực với khách cho toàn bộ nhân viên trong buổi họp đầu tuần 1."
       ],
-      "note": "Tuyệt đối không thực hiện và không tư vấn các dịch vụ y tế hay can thiệp xâm lấn",
+      "note": "Tuyệt đối không hứa hẹn các hiệu quả y tế hay chữa bệnh ngoài phạm vi thư giãn",
       "is_new": false
     },
     {
       "when": "Tuần 2–3",
       "title": "Xây dựng kịch bản tư vấn gói Galaxy 60 phút Vai Cổ Gáy cho khách gặp căng thẳng và đau mỏi",
-      "owner": "chủ spa và kỹ thuật viên",
+      "owner": "chủ spa và lễ tân",
       "steps": [
-        "Chủ spa biên soạn tài liệu hướng dẫn kỹ thuật viên tư vấn gói Galaxy 60 phút Vai Cổ Gáy cho khách căng thẳng, hoàn thành trước 31/10/2026",
-        "Kỹ thuật viên thực hành kịch bản tư vấn nhấn mạnh sự thư giãn vùng vai gáy, hoàn thành trước 04/11/2026",
-        "Lễ tân và kỹ thuật viên áp dụng tư vấn trực tiếp cho khách hàng đến spa, hoàn thành trước 10/11/2026"
+        "Chủ spa soạn kịch bản tư vấn 3 bước giới thiệu gói Galaxy 60 phút Vai Cổ Gáy tập trung vào lợi ích giải tỏa căng mỏi vùng cổ gáy, xong trong tuần 2.",
+        "Lễ tân và kỹ thuật viên luyện tập đối thoại theo kịch bản mẫu với chủ spa trong 2 buổi họp đầu tuần 2.",
+        "Lễ tân áp dụng tư vấn cho khách hàng có nhu cầu thư giãn vùng cổ gáy và ghi nhận số lượt đồng ý trải nghiệm trong tuần 3."
       ],
-      "note": "Không hứa hiệu quả y tế, tránh dùng thuật ngữ y học khi tư vấn",
+      "note": "Không cam kết chữa khỏi đau nhức hay hứa hẹn hiệu quả y tế cho khách",
       "is_new": false
     },
     {
       "when": "Tuần 2–3",
       "title": "Tư vấn chuyển đổi khách đã dùng gói Green Touch sang gói Gội Relax 60 phút",
-      "owner": "chủ spa và lễ tân",
+      "owner": "lễ tân và kỹ thuật viên",
       "steps": [
-        "Lễ tân luyện tập kịch bản giải thích giá trị gói Gội Relax 60 phút so với mặt bằng thị trường và giới thiệu các bước thư giãn chuyên sâu cho khách quen, hoàn thành trước 04/11/2026",
-        "Lễ tân áp dụng tư vấn nâng hạng gói dịch vụ cho khách đặt lịch gội đầu, hoàn thành trước 10/11/2026"
+        "Chủ spa chuẩn bị nội dung giới thiệu các lợi ích thư giãn sâu hơn của gói Gội Relax 60 phút so với gói cơ bản, hoàn thành trong tuần 2.",
+        "Kỹ thuật viên sau khi hoàn thành buổi gội cho khách quen dùng Green Touch gợi ý trải nghiệm gói Gội Relax 60 phút cho lần tiếp theo, áp dụng từ tuần 2.",
+        "Lễ tân ghi lại số lượt khách chuyển đổi thành công lên gói Gội Relax 60 phút vào sổ theo dõi cuối mỗi ngày trong tuần 3."
       ],
-      "note": "",
+      "note": "Không áp đặt hay chèo kéo khách, tôn trọng sự lựa chọn của khách hàng",
       "is_new": false
     },
     {
       "when": "Tuần 4",
       "title": "Thiết lập quy trình khảo sát mức độ thư giãn của khách sau các gói xoa bóp chuyên sâu",
-      "owner": "chủ spa",
+      "owner": "chủ spa và lễ tân",
       "steps": [
-        "Chủ spa chuẩn bị phiếu câu hỏi ngắn 3 mục về cảm giác thư giãn sau dịch vụ Galaxy 60 phút và Galaxy VIP 90 phút, hoàn thành trước 14/11/2026",
-        "Lễ tân gửi phiếu xin ý kiến nhanh khi khách dùng xong dịch vụ tại khu vực chờ, hoàn thành trước 17/11/2026",
-        "Chủ spa tổng hợp kết quả phản hồi của khách để hoàn thiện quy trình phục vụ, hoàn thành trước 20/11/2026"
+        "Chủ spa biên soạn phiếu khảo sát gồm 3 câu hỏi ngắn đánh giá sự thoải mái và mức độ hài lòng về không gian thư giãn, xong trước tuần 4.",
+        "Lễ tân mời khách trải nghiệm các gói Galaxy hoặc Đá Nóng Full Body 45 phút phản hồi nhanh sau dịch vụ trong suốt tuần 4.",
+        "Chủ spa và lễ tân tổng hợp các ý kiến đóng góp vào ngày cuối tuần 4 để hoàn thiện chất lượng phục vụ."
       ],
-      "note": "Khảo sát tự nguyện, không làm phiền thời gian nghỉ ngơi của khách",
+      "note": "Khảo sát ngắn gọn, tự nguyện, không làm phiền thời gian nghỉ ngơi của khách",
       "is_new": false
     }
   ],
-  "claude_extra": [],
+  "claude_extra": [
+    {
+      "type": "Cơ hội",
+      "text": "Spa có thể dùng đó làm góc tư vấn gội đầu và xoa bóp thư giãn vùng vai cổ gáy cho khách lớn tuổi, chỉ nói về thư giãn, không hứa hiệu quả y tế.",
+      "confidence": "Thấp",
+      "impact": "Vừa"
+    },
+    {
+      "type": "Rủi ro",
+      "text": "Khách lớn tuổi hoặc có bệnh nền (tim mạch, loãng xương, mang thai) có thể gặp vấn đề khi xoa bóp bấm huyệt.",
+      "confidence": "Vừa",
+      "impact": "Vừa"
+    }
+  ],
   "changes": {
-    "new": [],
-    "changed": [
-      "Dòng dự đoán: đổi từ chủ đề thức khuya và hồi phục sức khỏe sang chủ đề các cách thư giãn giúp ngủ ngon theo tin mới trên báo"
+    "new": [
+      "Thêm nhận định xu hướng về tác dụng của xoa bóp bấm huyệt đúng cách giúp giải tỏa căng thẳng thần kinh và đau mỏi cổ vai gáy.",
+      "Thêm cơ hội mở rộng tệp khách hàng nhờ chiến lược truyền thông đa kênh qua video ngắn và hội nhóm địa phương."
     ],
-    "gone": []
+    "changed": [
+      "Rủi ro pháp lý chuyển trọng tâm từ thảo luận phân định dịch vụ xâm lấn sang việc cơ quan chức năng kiểm tra và xử lý vi phạm tại cơ sở massage.",
+      "Việc tuần 1 chuyển trọng tâm từ đối chiếu danh mục không xâm lấn sang kiểm tra hồ sơ nhân viên và niêm yết quy trình xoa bóp lành mạnh."
+    ],
+    "gone": [
+      "Không còn nhận định về số người đến khám stress và mất ngủ gia tăng do cập nhật theo danh mục nghiên cứu hiện hành.",
+      "Không còn cơ hội từ khuyến cáo không tự ý dùng thuốc ngủ khi stress kéo dài."
+    ]
   },
   "growth": [
     {
-      "title": "Rà soát quy trình và niêm yết rõ ràng danh mục dịch vụ xoa bóp và gội đầu dưỡng sinh thuần túy thư giãn không xâm lấn",
-      "detail": "Chủ spa kiểm tra toàn bộ danh mục dịch vụ và dụng cụ để đảm bảo spa chỉ cung cấp dịch vụ thư giãn thuần túy, hoàn thành trước 25/10/2026 Lễ tân in và đặt bảng niêm yết cam kết dịch vụ thư giãn không xâm lấn tại quầy lễ tân, hoàn thành trước 26/10/2026"
+      "title": "Rà soát hồ sơ nhân viên và niêm yết công khai quy trình dịch vụ xoa bóp thuần túy thư giãn lành mạnh",
+      "detail": "Chủ spa kiểm tra toàn bộ hồ sơ lý lịch và cam kết tuân thủ quy chế của kỹ thuật viên, hoàn thành trước ngày 31/10/2026. Lễ tân in và niêm yết công khai bảng mô tả các dịch vụ xoa bóp thư giãn tại quầy tiếp đón trong tuần 1. Chủ spa phổ biến quy tắc ứng xử chuẩn mực với khách cho toàn bộ nhân viên trong buổi họp đầu tuần 1."
     },
     {
       "title": "Xây dựng kịch bản tư vấn gói Galaxy 60 phút Vai Cổ Gáy cho khách gặp căng thẳng và đau mỏi",
-      "detail": "Chủ spa biên soạn tài liệu hướng dẫn kỹ thuật viên tư vấn gói Galaxy 60 phút Vai Cổ Gáy cho khách căng thẳng, hoàn thành trước 31/10/2026 Kỹ thuật viên thực hành kịch bản tư vấn nhấn mạnh sự thư giãn vùng vai gáy, hoàn thành trước 04/11/2026 Lễ tân và kỹ thuật viên áp dụng tư vấn trực tiếp cho khách hàng đến spa, hoàn thành trước 10/11/2026"
+      "detail": "Chủ spa soạn kịch bản tư vấn 3 bước giới thiệu gói Galaxy 60 phút Vai Cổ Gáy tập trung vào lợi ích giải tỏa căng mỏi vùng cổ gáy, xong trong tuần 2. Lễ tân và kỹ thuật viên luyện tập đối thoại theo kịch bản mẫu với chủ spa trong 2 buổi họp đầu tuần 2. Lễ tân áp dụng tư vấn cho khách hàng có nhu cầu thư giãn vùng cổ gáy và ghi nhận số lượt đồng ý trải nghiệm trong tuần 3."
     },
     {
       "title": "Tư vấn chuyển đổi khách đã dùng gói Green Touch sang gói Gội Relax 60 phút",
-      "detail": "Lễ tân luyện tập kịch bản giải thích giá trị gói Gội Relax 60 phút so với mặt bằng thị trường và giới thiệu các bước thư giãn chuyên sâu cho khách quen, hoàn thành trước 04/11/2026 Lễ tân áp dụng tư vấn nâng hạng gói dịch vụ cho khách đặt lịch gội đầu, hoàn thành trước 10/11/2026"
+      "detail": "Chủ spa chuẩn bị nội dung giới thiệu các lợi ích thư giãn sâu hơn của gói Gội Relax 60 phút so với gói cơ bản, hoàn thành trong tuần 2. Kỹ thuật viên sau khi hoàn thành buổi gội cho khách quen dùng Green Touch gợi ý trải nghiệm gói Gội Relax 60 phút cho lần tiếp theo, áp dụng từ tuần 2. Lễ tân ghi lại số lượt khách chuyển đổi thành công lên gói Gội Relax 60 phút vào sổ theo dõi cuối mỗi ngày trong tuần 3."
     },
     {
       "title": "Thiết lập quy trình khảo sát mức độ thư giãn của khách sau các gói xoa bóp chuyên sâu",
-      "detail": "Chủ spa chuẩn bị phiếu câu hỏi ngắn 3 mục về cảm giác thư giãn sau dịch vụ Galaxy 60 phút và Galaxy VIP 90 phút, hoàn thành trước 14/11/2026 Lễ tân gửi phiếu xin ý kiến nhanh khi khách dùng xong dịch vụ tại khu vực chờ, hoàn thành trước 17/11/2026 Chủ spa tổng hợp kết quả phản hồi của khách để hoàn thiện quy trình phục vụ, hoàn thành trước 20/11/2026"
+      "detail": "Chủ spa biên soạn phiếu khảo sát gồm 3 câu hỏi ngắn đánh giá sự thoải mái và mức độ hài lòng về không gian thư giãn, xong trước tuần 4. Lễ tân mời khách trải nghiệm các gói Galaxy hoặc Đá Nóng Full Body 45 phút phản hồi nhanh sau dịch vụ trong suốt tuần 4. Chủ spa và lễ tân tổng hợp các ý kiến đóng góp vào ngày cuối tuần 4 để hoàn thiện chất lượng phục vụ."
     }
   ]
 }
